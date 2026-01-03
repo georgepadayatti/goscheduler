@@ -10,11 +10,11 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/georgejpadayatti/goscheduler/event"
-	"github.com/georgejpadayatti/goscheduler/job"
-	"github.com/georgejpadayatti/goscheduler/scheduler"
-	"github.com/georgejpadayatti/goscheduler/trigger"
-	"github.com/georgejpadayatti/goscheduler/trigger/cron"
+	"github.com/georgepadayatti/goscheduler/event"
+	"github.com/georgepadayatti/goscheduler/job"
+	"github.com/georgepadayatti/goscheduler/scheduler"
+	"github.com/georgepadayatti/goscheduler/trigger"
+	"github.com/georgepadayatti/goscheduler/trigger/cron"
 )
 
 func orTriggerJob() {

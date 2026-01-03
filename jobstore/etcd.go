@@ -10,8 +10,8 @@ import (
 
 	clientv3 "go.etcd.io/etcd/client/v3"
 
-	"github.com/georgejpadayatti/goscheduler/job"
-	jobtrigger "github.com/georgejpadayatti/goscheduler/trigger"
+	"github.com/georgepadayatti/goscheduler/job"
+	jobtrigger "github.com/georgepadayatti/goscheduler/trigger"
 )
 
 // EtcdJobStore stores jobs in an etcd cluster.

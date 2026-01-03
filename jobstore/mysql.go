@@ -7,8 +7,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/georgejpadayatti/goscheduler/job"
-	jobtrigger "github.com/georgejpadayatti/goscheduler/trigger"
+	"github.com/georgepadayatti/goscheduler/job"
+	jobtrigger "github.com/georgepadayatti/goscheduler/trigger"
 
 	// MySQL driver
 	_ "github.com/go-sql-driver/mysql"

@@ -7,7 +7,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/georgejpadayatti/goscheduler/internal/timeutil"
+	"github.com/georgepadayatti/goscheduler/internal/timeutil"
 )
 
 // FieldNames defines the order of cron fields.

@@ -4,7 +4,7 @@ import (
 	"context"
 	"time"
 
-	"github.com/georgejpadayatti/goscheduler/event"
+	"github.com/georgepadayatti/goscheduler/event"
 )
 
 // BackgroundScheduler runs the scheduler in a background goroutine.

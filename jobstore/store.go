@@ -6,7 +6,7 @@ import (
 	"reflect"
 	"time"
 
-	"github.com/georgejpadayatti/goscheduler/job"
+	"github.com/georgepadayatti/goscheduler/job"
 )
 
 // JobStore is the interface for job persistence backends.

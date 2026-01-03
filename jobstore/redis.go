@@ -10,8 +10,8 @@ import (
 
 	"github.com/redis/go-redis/v9"
 
-	"github.com/georgejpadayatti/goscheduler/job"
-	jobtrigger "github.com/georgejpadayatti/goscheduler/trigger"
+	"github.com/georgepadayatti/goscheduler/job"
+	jobtrigger "github.com/georgepadayatti/goscheduler/trigger"
 )
 
 // RedisJobStore stores jobs in Redis.

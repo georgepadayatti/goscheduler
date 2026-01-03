@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/georgejpadayatti/goscheduler/event"
-	"github.com/georgejpadayatti/goscheduler/job"
+	"github.com/georgepadayatti/goscheduler/event"
+	"github.com/georgepadayatti/goscheduler/job"
 )
 
 // Executor is the interface for job executors.

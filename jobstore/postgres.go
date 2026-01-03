@@ -7,8 +7,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/georgejpadayatti/goscheduler/job"
-	jobtrigger "github.com/georgejpadayatti/goscheduler/trigger"
+	"github.com/georgepadayatti/goscheduler/job"
+	jobtrigger "github.com/georgepadayatti/goscheduler/trigger"
 
 	// PostgreSQL driver
 	_ "github.com/lib/pq"

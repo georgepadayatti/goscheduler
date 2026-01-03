@@ -1,4 +1,4 @@
-module github.com/georgejpadayatti/goscheduler
+module github.com/georgepadayatti/goscheduler
 
 go 1.22
 

@@ -6,11 +6,11 @@ import (
 	"errors"
 	"time"
 
-	"github.com/georgejpadayatti/goscheduler/event"
-	"github.com/georgejpadayatti/goscheduler/executor"
-	"github.com/georgejpadayatti/goscheduler/job"
-	"github.com/georgejpadayatti/goscheduler/jobstore"
-	"github.com/georgejpadayatti/goscheduler/trigger"
+	"github.com/georgepadayatti/goscheduler/event"
+	"github.com/georgepadayatti/goscheduler/executor"
+	"github.com/georgepadayatti/goscheduler/job"
+	"github.com/georgepadayatti/goscheduler/jobstore"
+	"github.com/georgepadayatti/goscheduler/trigger"
 )
 
 // State represents the scheduler's running state.

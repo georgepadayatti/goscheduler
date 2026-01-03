@@ -5,7 +5,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/georgejpadayatti/goscheduler/job"
+	"github.com/georgepadayatti/goscheduler/job"
 )
 
 // jobEntry stores a job with its timestamp for sorting.

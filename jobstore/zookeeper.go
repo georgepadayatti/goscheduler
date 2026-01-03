@@ -9,8 +9,8 @@ import (
 
 	"github.com/go-zookeeper/zk"
 
-	"github.com/georgejpadayatti/goscheduler/job"
-	jobtrigger "github.com/georgejpadayatti/goscheduler/trigger"
+	"github.com/georgepadayatti/goscheduler/job"
+	jobtrigger "github.com/georgepadayatti/goscheduler/trigger"
 )
 
 // ZookeeperJobStore stores jobs in a Zookeeper cluster.

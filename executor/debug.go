@@ -7,8 +7,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/georgejpadayatti/goscheduler/event"
-	"github.com/georgejpadayatti/goscheduler/job"
+	"github.com/georgepadayatti/goscheduler/event"
+	"github.com/georgepadayatti/goscheduler/job"
 )
 
 // DebugExecutor executes jobs synchronously in the calling goroutine.
