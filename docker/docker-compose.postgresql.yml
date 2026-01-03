@@ -1,0 +1,43 @@
+version: '3.8'
+
+# Docker Compose configuration for testing PostgreSQL job store
+#
+# Usage:
+#   docker-compose -f docker/docker-compose.postgresql.yml up --build
+#
+# To clear alarms:
+#   docker-compose -f docker/docker-compose.postgresql.yml run --rm app ./postgresql-example --clear
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: goscheduler-postgres-test
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: goscheduler
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_test_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 2s
+      timeout: 5s
+      retries: 10
+
+  app:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile.postgresql-example
+    container_name: goscheduler-postgresql-example
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      # Override the connection string to use the postgres service
+      POSTGRES_CONN: "host=postgres port=5432 user=postgres password=postgres dbname=goscheduler sslmode=disable"
+    command: ["./postgresql-example", "host=postgres port=5432 user=postgres password=postgres dbname=goscheduler sslmode=disable"]
+
+volumes:
+  postgres_test_data:
